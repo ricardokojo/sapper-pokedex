@@ -15,7 +15,6 @@
 
   export let pokemon;
   const lastPokemonNumber = 807; // PokeAPI contains information up to Zeraora (807)
-  console.log(pokemon);
 
   $: paddedNumber = pokemon.id.toString().padStart(3, "0");
   $: previousPokemonNumber = pokemon.id - 1;

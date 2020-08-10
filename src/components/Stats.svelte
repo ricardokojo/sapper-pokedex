@@ -4,8 +4,6 @@
   export let pokemon;
 
   $: totalStats = pokemon.stats.reduce((acc, stat) => {
-    console.log(acc)
-    console.log(stat)
     return acc + stat.base_stat;
   }, 0);
 </script>
