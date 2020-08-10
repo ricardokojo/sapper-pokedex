@@ -5,8 +5,8 @@
   $: mainImage =
     pokemon.sprites.other["official-artwork"].front_default ?
       pokemon.sprites.other["official-artwork"].front_default : pokemon.sprites.front_default;
-  $: height = pokemon.height / 10;
-  $: weight = pokemon.weight / 10;
+  $: heightInMeters = pokemon.height / 10;
+  $: weightInKilograms = pokemon.weight / 10;
 
   function parseAbilityName(ability) {
     return ability.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase());
@@ -76,10 +76,10 @@
     </div>
 
     <h3>Height:</h3>
-    <p>{height} m</p>
+    <p>{heightInMeters} m</p>
 
     <h3>Weight:</h3>
-    <p>{weight} kg</p>
+    <p>{weightInKilograms} kg</p>
 
     <h3>Abilities:</h3>
     <ol>
