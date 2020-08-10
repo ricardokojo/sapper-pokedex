@@ -5,10 +5,7 @@
 
 <style>
 main {
-  margin-top: 6rem;
-  margin-bottom: 4rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 8rem auto 4rem auto;
   width: 100%;
 }
 
