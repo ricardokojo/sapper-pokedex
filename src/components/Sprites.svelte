@@ -7,14 +7,17 @@
 
 <style>
   table {
-    background-color: #ddd;
-    border: 1px solid #666;
+    background-color: #eee;
+    border: 1px solid #ddd;
     border-collapse: separate;
     border-left: 0;
     border-radius: 4px;
     border-spacing: 0px;
     table-layout: fixed;
     width: 100%;
+
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.5rem;
   }
 
   thead {
@@ -34,11 +37,11 @@
     padding: 5px 4px 6px 4px;
     text-align: left;
     vertical-align: top;
-    border-left: 1px solid #666;
+    border-left: 1px solid #ddd;
   }
 
   td {
-    border-top: 1px solid #666;
+    border-top: 1px solid #ddd;
     text-align: center;
     vertical-align: center;
   }
