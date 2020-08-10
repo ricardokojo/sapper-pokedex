@@ -9,36 +9,45 @@
 </script>
 
 <script>
+  import BasicInfo from '../../components/BasicInfo.svelte';
+
   export let pokemon;
+  console.log(pokemon);
 
   $: paddedNumber = pokemon.id.toString().padStart(3, "0");
 </script>
 
+<style>
+  a {
+    color: #777;
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #666;
+    text-decoration: underline;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+  }
+
+  h1 > span {
+    text-transform: capitalize;
+  }
+</style>
+
 <svelte:head>
-  <title>{paddedNumber} - {pokemon.name.toUpperCase()} | Sapper Pokédex</title>
+  <title>{paddedNumber} — {pokemon.name.toUpperCase()} | Sapper Pokédex</title>
 </svelte:head>
 
 <a href="/">‹ Voltar ao início</a>
 
-<h1>{paddedNumber} - {pokemon.name}</h1>
+<h1>{paddedNumber} — <span>{pokemon.name}</span></h1>
 
-<div class="base">
-  <img src={pokemon.sprites.other["official-artwork"].front_default} class="img" alt={`${pokemon.name}'s official artwork`}>
-  <div class="info">
-    <h2>
-      {#each pokemon.types as type}
-        <span class="type {type.type.name}">{type.type.name}</span>
-      {/each}
-    </h2>
-    <p>{pokemon.height / 10}m</p>
-    <p>{pokemon.weight / 10}kg</p>
-    <ol>
-      {#each pokemon.abilities as ability}
-        <li>{ability.ability.name} {ability.is_hidden}</li>
-      {/each}
-    </ol>
-  </div>
-</div>
+<BasicInfo pokemon={pokemon} />
 
 <div class=''>
   <ul>
