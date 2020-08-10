@@ -1,5 +1,5 @@
 <style>
-.semiCircle {
+.semi-circle {
   position: relative;
   background: #fefefe;
   height: 15vh;
@@ -9,5 +9,5 @@
 }
 </style>
 
-<footer class="semiCircle">
+<footer class="semi-circle">
 </footer>

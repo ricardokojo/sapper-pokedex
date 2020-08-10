@@ -1,5 +1,5 @@
 <style>
-.semiCircle {
+.semi-circle {
   position: relative;
   background: rgb(128,9,9);
   background: linear-gradient(150deg, rgba(128,9,9,1) 0%, rgba(255,17,17,1) 50%, rgba(255,17,17,1) 100%);
@@ -9,7 +9,7 @@
   box-shadow: 0 0 1rem .1rem #333;
 }
 
-.semiCircle::before {
+.semi-circle::before {
   position: absolute;
   content: '';
   left: 50%;
@@ -26,5 +26,5 @@
 }
 </style>
 
-<header class="semiCircle">
+<header class="semi-circle">
 </header>
