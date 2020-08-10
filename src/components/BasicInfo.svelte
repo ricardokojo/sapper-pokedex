@@ -16,6 +16,7 @@
 <style>
   .basic-info {
     display: flex;
+    margin-bottom: 1.5rem;
   }
 
   .main-img {
