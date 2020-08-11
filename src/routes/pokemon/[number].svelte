@@ -59,7 +59,7 @@
   <title>{paddedNumber} — {pokemon.name.toUpperCase()} | Sapper Pokédex</title>
 </svelte:head>
 
-<a href="/">‹ Voltar ao início</a>
+<a href="/">‹ Back to Homepage</a>
 
 <h1>{paddedNumber} — <span>{pokemon.name}</span></h1>
 
@@ -71,9 +71,9 @@
 
 <div class="bottom-links">
   {#if previousPokemonNumber > 0}
-    <a href={`/pokemon/${previousPokemonNumber}`} class="previous">‹ Anterior</a>
+    <a href={`/pokemon/${previousPokemonNumber}`} class="previous">‹ Previous</a>
   {/if}
   {#if nextPokemonNumber <= lastPokemonNumber}
-    <a href={`/pokemon/${nextPokemonNumber}`} class="next">Próximo ›</a>
+    <a href={`/pokemon/${nextPokemonNumber}`} class="next">Next ›</a>
   {/if}
 </div>
